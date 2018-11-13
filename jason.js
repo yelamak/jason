@@ -78,7 +78,7 @@ function getStoredData(){
 	function view(){
         getStoredData();
         var text;
-        if(JSON.stringify(jasonarray)!=null)
+        if(jQuery.isEmptyObject(jasonarray))
             text=createtable(jasonarray);
         else
             text="<p style='text-align:center'>No Records Found<p>";
