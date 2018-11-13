@@ -119,7 +119,7 @@ function getStoredData(){
                     tempdata[key]=value;
         });
 
-        if(tempdata.length<=0)
+        if(jQuery.isEmptyObject(tempdata))
             alert("nothing found");
         else{
             text2=createtable(tempdata);
