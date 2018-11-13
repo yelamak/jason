@@ -55,6 +55,7 @@ $.extend(jasonarray,lines);
 localStorage.setItem("storeddata",JSON.stringify(jasonarray));
 localStorage.setItem("id",id);
 console.log(JSON.stringify(jasonarray));
+alert("uploaded sucessfully");
 }
     
 
