@@ -17,7 +17,6 @@ function getStoredData(){
     $('#updateform').submit(function(){
         $('#validatemessage1').show();
         getStoredData();
-        var jason={};
         var myForm = document.getElementById('updateform');
         formData = new FormData(myForm);
 		var name=formData.get('name1');
@@ -25,7 +24,6 @@ function getStoredData(){
 		var message=$('#validatemessage1');
 		var phno=formData.get('phno1');
         var temp=$("#temp").val();
-        var count=0,count1;
         if(checkDataValidation(name,email,message,phno))  {
             if(!checkDuplicateData(email,temp)){
                 jasonarray[temp].username=name;
